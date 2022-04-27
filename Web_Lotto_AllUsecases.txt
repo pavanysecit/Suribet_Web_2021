@@ -1,0 +1,118 @@
+Feature: Testing all the fucntionalities of Lotto Module in Suribet Webiste 
+
+#Cross_Verifying_Betting_Numbers
+#Scenario: Cross verfiying the Placed bet numbers in screen and betting slip
+#	Given Web: chrome browser, lotto valid url, go button, valid login details
+#	When Web: place the bet and validate the placed bet numbers on screen and betting slip
+#	Then Web: Both the numbers on screen and betting slip should match
+
+
+#Same_Numbers_Selection
+#Scenario: Verification of selecting the same Numbers
+#	Given Web: chrome browser, lotto valid url, go button, valid login details, placing the bet twice
+#	When Web: placed the bet twice and validate in betting slip numbers
+#	Then Web: validate the message on selecting the same numbers
+
+
+#Login (Lotto_Login functionalities)
+#Scenario: Load the Lotto website with the Valid Url 
+#	Given Web: chrome browser, lotto valid url 
+#	When Web : open the chrome browser, Enter the valid lotto url 
+#	When Web: login with valid credentials 
+#	When Web: login with invalid credentials 
+#	Given Web: chrome browser, suribet valid url 
+#	When Web: home page verification in suribet product section 
+#	Then Web : lotto home page should be displayed 
+
+
+#Without_Login_Place_Bet
+#Scenario: placing the bet without login
+#	Given Web: chrome browser, suribet valid url, place the bet without login
+#	When Web: open the chrome browser, enter the valid url and place the bet without login
+#	Then Web : validate the message which is displaying
+
+
+#Recent_Winners_Video_Validation
+#Scenario: Validating the recent Winners 
+#	Given Web: chrome browser, lotto valid url, valid login details, recent winners video check
+#	When Web : click on video and check whether able to play the video
+#	Then Web : video should be played for recent winners
+	
+	
+#Account_Summary (Pending)
+#Scenario: Verify all the details under Account Summary page
+#	Given Web: Chrome browser, valid URL, Go button,valid login details,click on Account id section
+#	When Web: Navigate to lotto game application website, entering valid url, click on Account id section
+#	Then Web: account summary, all the filter and bet details should be verified
+	
+	
+#Checking_Current_Draw
+#Scenario: Verifying the Current draw Section
+#	Given Web: chrome browser, valid url, lotto valid account id, valid password, login button and check the Current Draw
+#	When Web : verify the current draw No, Date and Time
+#	Then Web : match the current draw No, Date and Time with the suribet current date and time
+
+	
+#Clearing_Bets
+#Scenario: Verifying the functionalities of Clear and Clear All Button
+#	Given Web: Chrome browser, valid URL, Go button, valid login details, select numbers and click on clear 
+#	When Web: Navigate to lotto game application website, entering valid url, entering valid credentials, choose the numbers and clear
+#	Then Web: Selected Numbers should be cleared
+#	Given Web: Chrome browser, valid URL, Go button, valid login details, select numbers and click on clear all
+#	When Web: Navigate to lotto game application website, entering valid url, entering valid credentials, choose the numbers and click on clear
+#	Then Web: All Selected Numbers should be cleared
+
+
+#Draw_Results (Pending)
+#Scenario: Verifying the functionality of Draw Results
+#	Given Web: Chrome browser, valid URL, Go button, valid login details, click on lotto results 
+#	When Web: click on lotto results and verifying the details in result section
+#	Then Web: Result details for Draws should be displayed and along with the matched criteria
+
+
+#Draw_Selection
+#Scenario: Verify the functionality of Quick pick, 05 pick, 10 pick 
+#	Given Web: Chrome browser, valid URL, Go button, valid login details, click the Quick pick button
+#	When Web: Navigate to lotto game application website, entering valid url, entering valid credentials, click on Quick pick 
+#	Then Web: Quick pick numbers should display under betting slip
+#	Given Web: Chrome browser, valid URL, Go button, valid login details, click on 5Pick button
+#	When Web: Navigate to lotto game application website, entering valid url, entering valid credentials, click on 5 Pick 
+#	Then Web: 5 Pick numbers should display under betting slip
+#	Given Web: Chrome browser, valid URL, Go button, valid login details, click on Ten Pick button 
+#	When Web: Navigate to lotto game application website, entering valid url, entering valid credentials, click on Ten Pick 
+#	Then Web: Ten Pick numbers should display under betting slip 
+
+
+#Placing_Verifying_Bets_Order
+#Scenario: verify the functionality of selecting random numbers present in ascending order
+#	Given Web: Chrome browser, valid URL, Go button, valid login details, select numbers and verify it is in ascending order
+#	When Web: Navigate to lotto game application website, entering valid url, entering valid credentials, choose the numbers
+#	Then Web: Selected Numbers should display in ascending order	
+
+
+#Searching_Draw_Results(Pending)
+#Scenario: Verfiying the Searched Draw Results
+#	Given Web: Chrome browser, valid URL, Go button,valid login details,click on lotto result, search for the particular result
+#	When Web: Navigate to lotto game application website, entering valid url, click on lotto result, search for the particular result
+#	Then Web: searched result should be displayed based on the criteria
+
+
+#Searching_Slip
+#Scenario: Verifying the funtionality of barcode/slip_id
+#	Given Web: Chrome browser, valid URL, Go button, valid login details, search for slip id or barcode 
+#	When Web: Navigate to lotto game application website, entering valid url, entering valid credentials, search slip id and click on search button
+#	Then Web: Searched slip_id should be displayed
+	
+	
+#Tab_Name_Verification
+#Scenario: verifiying the browser tab name 
+#	Given Web: chrome browser, suribet valid url, verify the browser tab name 
+#	When Web: open the chrome browser, enter the valid url and verify the browser tab name 
+#	Then Web : Browser tab name should match 
+
+
+#Verifying_Minimum_Stake_Amount
+Scenario: Verify the minium stake amount
+	Given Web: Chrome browser, valid URL, Go button, valid login details, place the bet, check the minimum stake amount 
+	When Web: Navigate to lotto game application website, entering valid url, entering valid credentials, place the bet and verify the minimum stake amount
+	Then Web: Minimum stake amount should be verified

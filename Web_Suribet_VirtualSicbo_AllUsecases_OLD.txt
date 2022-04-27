@@ -1,0 +1,85 @@
+Feature: Test all the functionalities of Virtual Sicbo module in Suribet Website on Web version
+
+	# Web_VSicbo_Login_Draw_Verifications
+
+	 #Scenario: Verify basic functionalities of Virtual Sicbo module like verifying current draw, bet numbers, place a bet without login, verify minimum bet, cross verify selected bet numbers and stake amount
+    #Given  Mobile: Chrome browser, suribet website valid URL, login details, current draw, bet numbers, mimimum bet, stake amount and validation messages
+    #When Mobile: Login to suribet website with valid login details, Click on Virtual Sicbo module link, cross check current draw , bet numbers and validation message for mimimum bet & stake amount calculations
+    #Then Mobile:  User should logged-in successfully to Virtual Sicbo module
+	#And Mobile: System should show Current Draw#, Date, Time in the Virtual Sicbo module
+	#And Mobile: Selected Draw No#, Time and betting numbers should be display on the Virtual Sicbo module screen
+	#And Mobile: Validation message for placing bet without login to the website
+	#And Mobile: Stake amount should automatically displayed on the Virtual Sicbo betting slip
+	
+
+	# Web_VSicbo_PlaceBet_Lock_UnlockBetNumbers_ChipDenomination_Verify
+
+	#Scenario: Place the bet and check the account balance, check chip denomination and betting lock & unlock functionalities
+    #Given  Mobile: Chrome browser, suribet website valid URL, login details, current draw, bet numbers, mimimum bet, stake amount, chip denominations, forward button and confirmation messages
+    #When Mobile: Login to suribet website with valid login details, Click on Virtual Sicbo module link, select the chip denomination, select bet numbers, click on forward button & confirm button and check confirmation message
+    #Then Mobile:  Bet should be placed successfully and confirmation message should be displayed
+	#And Mobile: Account balance should get deducted as per stake amount  after placing bet
+	#And Mobile: Selected chip denomination should be displayed as stake amount in betting slip for each bet numbers
+	#And Mobile: Lock icon should exists on the betting number even after successful completion
+	#And Mobile: Lock icon should be displayed on the betting number even if the user refreshes page or navigates to somewhere and come back 
+	#And Mobile: Lock icon should be displayed if the user logged out and logs in back
+	select the replay button, and verify perviously successfully placed bets should be selected on the table for current selected draw
+	
+	
+	
+	# Web_VSicbo_CrossVerify_Buttons_Availability
+	
+	#Scenario: Verify the Forward, Confirn, ClearAll, Stake Amount, No of rows, Expected winning amount and Bet types functionalities and visibility
+    #Given  Mobile: Chrome browser, suribet website valid URL, login details, current draw, bet numbers, Forward, Confirn, ClearAll, Stake Amount, No of rows, Bet types and confirmation message
+    #When Mobile: Login to suribet website with valid login details, Click on Virtual Sicbo module link, select the bet numbers, check stake amount, check no of rows count, click on clearall button then select bet numbers again, click on forward button & confirm button and check confirmation message
+    #Then Mobile:  Bet should be placed successfully and Print slip button should be displayed
+	#And Mobile: Selected bet types should be displayed in betting slip 
+	#And Mobile: Stake amount in betting slip for each bet numbers should be displayed
+	#And Mobile: On click of ClearAll button, selected bet types should get removed from betting slip and No of Rows value should be displayed as 0
+	#And Mobile: No of rows values should get decreased by 1 whenever user clicks on X icon on each number in betting slip
+	#And Mobile:  Expected winning amount should be displayed on each betting number as per the bet type selected
+	#And Mobile: On selecting betting types, Forward button should be displayed. After clicking on forward button, Confirm button should be displayed. After confirm, Print Slip button should be displayed
+	
+
+	# Web_VSicbo_PlaceBet_Online_CancelSlip_AllUsecases
+
+	 #Scenario: Verify Cancel Slip functionalities when bet is placed from online account
+    #Given  Mobile: Chrome browser, suribet website valid URL, login details, VS module, current draw, bet numbers, Forward, Confirn, ClearAll, Cancel Slip button, Balance and confirmation message on cancel
+    #When Mobile: Login to suribet website with valid login details, Click on Virtual Sicbo module link, select the bet numbers, place the bet, cancel the bet within 1 min, again place a bet and check the visibility of cancel bet
+    #Then Mobile:  Bet should be placed successfully from online account and Canncel slip button should be displayed in VS. 
+	#And Mobile: Clicking on Cancel before 1 min, bet should get cancelled and confirmation message should be displayed in VS
+	#And Mobile: Balance should get refunded to online account if the bet is cancelled within 1 min in VS
+	#And Mobile: Cancel slip button should get disappeared from the betting slip after 1min and user should not be able to cancel the bet in VS
+	#And Mobile: Validation message should get displayed when user clicked on Cancel Slip button and then try to click on Cancel Slip button after 1 min in PopUp window and amount should not get refunded in VS
+	#And Mobile:  Cancel slip button should be displayed in Account details of the Online and Slip should get cancelled successfully within 1 minute in VS
+	#And Mobile: Cancel slip button should get disappeared in Account details of the Online account after 1 min in VS
+	
+	
+	# Web_VSicbo_PlaceBet_Card_WithLogin_CancelSlip_AllUsecases
+	
+	#Scenario: Verify Cancel Slip functionalities when bet is placed from Card with login
+    #Given  Mobile: Chrome browser, suribet website valid URL, Card login details, VS module, current draw, bet numbers, Forward, Confirn, ClearAll, Cancel Slip button, Balance and confirmation message on cancel
+    #When Mobile: Login to suribet website with valid login details by card, Click on Virtual Sicbo module link, select the bet numbers, place the bet, cancel the bet within 1 min, again place a bet and check the visibility of cancel bet
+    #Then Mobile:  Bet should be placed successfully from Card account and Canncel slip button should be displayed in VS. 
+	#And Mobile: Clicking on Cancel before 1 min using card login, bet should get cancelled and confirmation message should be displayed in VS
+	#And Mobile: Balance should get refunded to Card account if the bet is cancelled within 1 min in VS
+	#And Mobile: Cancel slip button should get disappeared from the betting slip after 1min and user should not be able to cancel the bet in VS using card details
+	#And Mobile: Validation message should get displayed when user clicked on Cancel Slip button and then try to click on Cancel Slip button after 1 min in PopUp window and amount should not get refunded to card account in VS
+	#And Mobile:  Cancel slip button should be displayed in Account details of the Card and Slip should get cancelled successfully within 1 minute in VS
+	#And Mobile: Cancel slip button should get disappeared in Account details of the Card account after 1 min in VS
+	
+	
+	# Web_VSicbo_PlaceBet_Online_CancelSlip_AllUsecases
+	
+	#Scenario: Verify Cancel Slip functionalities when bet is placed from Card without login
+    #Given  Mobile: Chrome browser, suribet website valid URL, Card details without login, VS module, current draw, bet numbers, Forward, Confirn, ClearAll, Cancel Slip button, Balance and confirmation message on cancel
+    #When Mobile: Load suribet website with valid login details by card without login, Click on Virtual Sicbo module link, select the bet numbers, place the bet, cancel the bet within 1 min, again place a bet and check the visibility of cancel bet
+    #Then Mobile:  Bet should be placed successfully from Card account without login and Canncel slip button should be displayed in VS. 
+	#And Mobile:  Bet should be not placed successfully if the invalid card details provided during placing bet in VS. 
+	#And Mobile: Bet should not be placed successfully if the card details should not met the length of card number and card pin in VS
+	#And Mobile: Clicking on Cancel before two min using card without login, bet should get cancelled and confirmation message should be displayed in VS
+	#And Mobile: Bet should not get cancelled if the invalid card details provided while cancelling in VS
+	#And Mobile: Balance should get refunded to Card account without login if the bet is cancelled within two min in VS
+	#And Mobile: Cancel slip button should get disappeared from the betting slip after 2 min and user should not be able to cancel the bet in VS using card details without login
+	#And Mobile: Validation message should get displayed when user clicked on Cancel Slip button and then try to click on Cancel Slip button after 2 min in PopUp window and amount should not get refunded to card account without login in VS
+	
